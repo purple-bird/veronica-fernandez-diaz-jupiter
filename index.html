@@ -5,51 +5,175 @@
     <meta charset="UTF-8" />
     <meta name="author" content="Veronica Fernandez-Diaz" />
     <link href="css/index.css" rel="stylesheet" />
+    <style>
+      .navigational-header {
+        position: relative;
+      }
+
+      @supports (position: sticky) {
+        .navigational-header {
+          position: -webkit-sticky;
+          position: -moz-sticky;
+          position: -ms-sticky;
+          position: -o-sticky;
+          position: sticky;
+
+          top: 0;
+        }
+      }
+    </style>
   </head>
 
   <body>
+    <nav class="navigational-header">
+      <div><a href="#about">About</a></div>
+      <div><a href="#experience">Experience</a></div>
+      <div><a href="#skills">Skills</a></div>
+      <div><a href="#projects">Projects</a></div>
+      <div><a href="#connect">Connect</a></div>
+    </nav>
     <header>
       <h1>Veronica Fernandez-Diaz</h1>
     </header>
-    <img
-      src="images/Professional Picture Final.jpg"
-      alt="My Professional Picture"
-    />
-    <section id="About">
-      <h2>About</h2>
-      <p>
-        I am 29 years old. I am from Mexico and now live in Colorado. I studied
-        Sociology at Colorado College. Currently, I work at a nonprofit as a
-        Research Manager. I always wanted to do work that supported the
-        communities I am a part of and I have been fortunate enough to do that.
-      </p>
-    </section>
-    <section id="Experience">
+    <div class="about-and-photo-container">
+      <div class="my-photo-column">
+        <img
+          src="images/Professional Picture Final.jpg"
+          alt="My Professional Picture"
+        />
+      </div>
+      <div class="about-column">
+        <section id="about">
+          <h2>About</h2>
+          <p>
+            I am 29 years old. I am from Mexico and now live in Colorado. I
+            studied Sociology at Colorado College. Currently, I work at a
+            nonprofit as a Research Manager. I always wanted to do work that
+            supported the communities I am a part of and I have been fortunate
+            enough to do that.
+          </p>
+        </section>
+      </div>
+    </div>
+    <section id="experience">
       <h2>Experience</h2>
+      <div class="experience-container">
+        <div class="job-containter">
+          <div class="job-title">
+            <h3>Senior Manager</h3>
+            <h3 class="dates">07/01/2024 - Present</h3>
+          </div>
+          <p>
+            Oversee collection of data about members, including implementation
+            of new methods. Ensure that all written content for members in
+            English and Spanish is accessible, including related to members’
+            participation in surveys and other data collection efforts. Produce
+            time-sensitive statistics to understand members as a group for
+            dissemination to diverse audiences. Ensure functionality of ASAP’s
+            multi-modal digital communications systems. Serve as final quality
+            control of all of ASAP’s member databases and datasets. Serve as a
+            lead on implementation of new technology and research methods.
+            Provide quality control of all staff roles related to maintaining
+            member data, including training of new staff.
+          </p>
+        </div>
+
+        <div class="job-containter">
+          <div class="job-title">
+            <h3>Manager</h3>
+            <h3 class="dates">08/01/2023 - 06/30/2024</h3>
+          </div>
+          <p>
+            Manage a subset of ASAP’s data collection efforts related to
+            members, i.e. specific campaigns. Serve as lead for accessible
+            written member content in English and Spanish on a subset of
+            materials. Lead statistical analysis and data interpretation efforts
+            for specific campaigns, for dissemination to members. Implement
+            efforts to communicate with asylum seekers through multi-modal
+            digital communication systems. Manage ASAP’s primary member
+            database. Train staff of all levels to use and understand ASAP’s
+            member data systems, and report to leadership on common issues or
+            confusions.
+          </p>
+        </div>
+
+        <div class="job-containter">
+          <div class="job-title">
+            <h3>Senior Associate</h3>
+            <h3 class="dates">05/01/2023 - 07/31/2023</h3>
+          </div>
+          <p>
+            Contribute to data collection about members, taking on the more
+            complicated tasks. Write accessible content for members in English
+            and Spanish on more complex topics. Participate in statistical
+            analysis and data interpretation efforts, taking the lead on more
+            challenging projects. Communicate with asylum seekers en masse
+            through multi-modal digital communication systems. Help to maintain
+            ASAP’s members databases and datasets. Train junior members of the
+            team, and serve as first line of support for staff with technical
+            issues related to member data systems.
+          </p>
+        </div>
+
+        <div class="job-containter">
+          <div class="job-title">
+            <h3>Associate</h3>
+            <h3 class="dates">11/02/2020 - 04/30/2023</h3>
+          </div>
+          <p>
+            Contribute to data collection about members. Write accessible
+            content for members in English and Spanish. Communicate with asylum
+            seekers on an individual basis. Help to maintain ASAP’s members
+            databases and datasets.
+          </p>
+        </div>
+
+        <div class="job-containter">
+          <div class="job-title">
+            <h3>Project Coordinator</h3>
+            <h3 class="dates">07/22/2019 - 10/30/2020</h3>
+          </div>
+          <p>
+            Managed database maintenance by logging client interactions,
+            producing monthly stats reports, and serving in a committee to
+            evaluate procedures. Collaborated alongside multiple departments and
+            advocates to understand the preferences of detained immigrants and
+            to build systems reflecting those preferences as a collective.
+            Communicated with clients and other individuals to understand their
+            needs and connect them to responsive services and materials.
+            Interviewed immigrants, collected evidence, translated documents,
+            and provided immigrants with accessible updates. Performed
+            administrative tasks.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <p>(Empty for now)</p>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
       <ul>
-        <li>
-          In college, I took Research Methods and Quantitative Research Design,
-          in which I worked with systems like Stata.
-        </li>
-        <li>I have worked with Wordpress for about 4 years.</li>
-        <li>I have done extensive product testing for the last 2 years.</li>
-        <li>
-          I contributed to the coordination of a project to create a new tool to
-          message 400,000+ members through text in a more efficient manner,
-          significantly reducing staff time required.
-        </li>
+        <li>Project #1</li>
+        <li>Project #2</li>
+        <li>Project #3</li>
       </ul>
     </section>
-    <section id="Connect">
+    <section id="connect">
       <h2>Connect</h2>
-      <ul>
-        <li>
+      <div class="connect-container">
+        <div class="social-media-column">
           <a href="https://www.linkedin.com/in/veronicafernandezdiaz"
             >My LinkedIn</a
           >
-        </li>
-        <li><a href="https://github.com/purple-bird">My Github</a></li>
-      </ul>
+          <img src="images/LinkedIn-black-icon.jpg" alt="Veronica's LinkedIn" />
+        </div>
+        <div class="social-media-column">
+          <a href="https://github.com/purple-bird">My Github</a>
+          <img src="images/Github-black-icon.png" alt="Veronica's Github" />
+        </div>
+      </div>
     </section>
   </body>
 </html>
