@@ -135,6 +135,7 @@ header {
   display: flex;
   flex-direction: row;
   border-bottom: solid;
+  flex-wrap: wrap;
 }
 
 .dates {
