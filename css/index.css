@@ -1,29 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-body {
+html {
   font-family: "Montserrat", serif;
-  margin: 50px 25px;
+  font-size: 16px;
+  scroll-padding-top: 15%;
 }
 
+body {
+  margin: 0 0 700px 0;
+  background-color: #e3c8cd;
+  color: black;
+}
+
+/* ========
+Typeography 
+======== */
+
 p {
-  padding: 5px 25px;
+  font-size: 1rem;
+  padding: 1rem;
+  line-height: 1.5;
 }
 
 li {
-  padding: 5px 25px 0px 0px;
-}
-
-header {
-  color: #f6edee;
-  text-align: center;
-  background: #8f1402;
-  margin-bottom: 20px;
-  padding: 5px;
-}
-
-img {
-  height: 300px;
-  border-radius: 8px;
+  padding-right: 1rem;
+  line-height: 1.5;
 }
 
 a {
@@ -31,23 +32,148 @@ a {
   font-weight: bold;
 }
 
-h2 {
-  padding: 8px;
+h1 {
+  font-size: 2rem;
   color: #f6edee;
+  text-align: center;
+}
+
+h2 {
+  padding: 1rem;
+  color: #f6edee;
+  font-size: 1.3rem;
   background-color: #a24857;
 }
 
-#About {
-  padding-bottom: 5px;
-  background: #e3c8cd;
+h3 {
+  font-size: 1rem;
+  color: black;
+  padding: 0 1rem;
 }
 
-#Experience {
-  padding-bottom: 5px;
-  background: #e3c8cd;
+/* ========
+Layout 
+======== */
+
+.navigational-header {
+  justify-content: space-between;
+  text-align: center;
+  display: flex;
+  background: darkred;
+  padding: 1rem;
+  font-size: 1.1rem;
 }
 
-#Connect {
-  padding-bottom: 5px;
-  background: #e3c8cd;
+.navigational-header div {
+  flex: 1;
+  border: solid darkred;
+  padding: 0.5rem;
+  background: white;
+}
+
+@media all and (max-width: 600px) {
+  .navigational-header {
+    flex-wrap: wrap;
+  }
+  .navigational-header > div {
+    flex: 1 1 100%;
+  }
+}
+
+header {
+  background-color: #8f1402;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.about-and-photo-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.about-and-photo-container > div > img {
+  width: 50%;
+  border-radius: 8px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+.about-column {
+  width: 150%;
+  margin: 1rem;
+  text-align: center;
+  border-bottom: solid #a24857;
+}
+
+@media all and (max-width: 600px) {
+  .about-and-photo-container {
+    flex-wrap: wrap;
+  }
+  .about-and-photo-container > div {
+    flex: 1 1 100%;
+  }
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.job-containter {
+  background-color: #f4e8e6;
+  padding: 1rem;
+  border: solid #a24857;
+  border-width: 1%;
+  margin: 1rem;
+  
+}
+
+.job-title {
+  display: flex;
+  flex-direction: row;
+  border-bottom: solid;
+}
+
+.dates {
+  margin-left: auto;
+}
+
+#experience {
+  padding-bottom: 1rem;
+}
+
+#skills {
+  padding-bottom: 1rem;
+}
+
+#projects {
+  padding-bottom: 1rem;
+}
+
+#connect {
+  padding-bottom: 1rem;
+}
+
+.connect-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.connect-container div {
+  flex: 1;
+  padding: 0.5rem;
+  margin: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.connect-container > div > img {
+  width: 20%;
+  border-radius: 8px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
 }
