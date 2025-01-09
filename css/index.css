@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+/* This applies for mobile phones: */
+
 html {
   font-family: "Montserrat", serif;
   scroll-padding-top: 14em;
@@ -55,7 +57,6 @@ h3 {
 Layout 
 ======== */
 
-/* For mobile phones: */
 .navigational-header {
   display: flex;
   flex-direction: column;
@@ -152,7 +153,7 @@ header {
 }
 
 @media all and (min-width: 600px) {
-  /* For tablets: */
+  /* This applies for tablets: */
   html {
     scroll-padding-top: 5em;
   }
@@ -175,6 +176,7 @@ header {
 
   .about-and-photo-container > div > img {
     width: 8em;
+    border: solid;
   }
 
   .experience-container {
@@ -194,6 +196,7 @@ header {
 
   .connect-container div {
     text-align: center;
+    border: solid #a24857;
   }
   .connect-container > div > img {
     margin: 0 auto;
@@ -202,26 +205,30 @@ header {
 }
 
 @media all and (min-width: 768px) {
-  /* For desktop: */
+  /* This applies for desktop: */
   html {
     scroll-padding-top: 7em;
   }
 
   .navigational-header {
     font-size: 1.3rem;
+    padding: 0.5em 2em;
   }
 
   .navigational-header > div {
     margin: 0.3em;
+    padding: 0.7em;
   }
 
   .about-and-photo-container {
     flex-direction: row;
     margin: 2em;
+    justify-content: space-evenly;
   }
 
   .about-and-photo-container > div > img {
     max-width: 12em;
+    border-radius: 0px;
   }
 
   .job-container {
@@ -230,6 +237,7 @@ header {
   }
 
   .connect-container {
-    width: 30%;
+    width: 40%;
+    font-style: oblique;
   }
 }
