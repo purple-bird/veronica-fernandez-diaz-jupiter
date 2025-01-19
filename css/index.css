@@ -1,15 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+/* This applies for mobile phones: */
+
 html {
   font-family: "Montserrat", serif;
-  font-size: 16px;
-  scroll-padding-top: 15%;
+  scroll-padding-top: 14em;
 }
 
 body {
   margin: 0 0 700px 0;
   background-color: #e3c8cd;
   color: black;
+  font-size: 1rem;
 }
 
 /* ========
@@ -18,12 +20,12 @@ Typeography
 
 p {
   font-size: 1rem;
-  padding: 1rem;
+  padding: 1em;
   line-height: 1.5;
 }
 
 li {
-  padding-right: 1rem;
+  padding-right: 1em;
   line-height: 1.5;
 }
 
@@ -39,7 +41,7 @@ h1 {
 }
 
 h2 {
-  padding: 1rem;
+  padding: 0.8em;
   color: #f6edee;
   font-size: 1.3rem;
   background-color: #a24857;
@@ -48,7 +50,7 @@ h2 {
 h3 {
   font-size: 1rem;
   color: black;
-  padding: 0 1rem;
+  padding: 0 1em;
 }
 
 /* ========
@@ -56,79 +58,67 @@ Layout
 ======== */
 
 .navigational-header {
-  justify-content: space-between;
-  text-align: center;
   display: flex;
+  flex-direction: column;
   background: darkred;
-  padding: 1rem;
-  font-size: 1.1rem;
+  padding: 1em;
+  font-size: 0.9rem;
+  text-align: center;
 }
 
-.navigational-header div {
-  flex: 1;
+.navigational-header > div {
   border: solid darkred;
-  padding: 0.5rem;
+  padding: 0.5em;
   background: white;
-}
-
-@media all and (max-width: 600px) {
-  .navigational-header {
-    flex-wrap: wrap;
-  }
-  .navigational-header > div {
-    flex: 1 1 100%;
-  }
 }
 
 header {
   background-color: #8f1402;
   margin-bottom: 1rem;
-  padding: 1rem;
+  padding: 0.1em;
 }
 
 .about-and-photo-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-bottom: 1rem;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 1em;
 }
 
 .about-and-photo-container > div > img {
-  width: 50%;
+  width: 70%;
   border-radius: 8px;
-  margin-right: auto;
-  margin-left: auto;
   display: block;
+  margin: 0 auto;
+  max-width: 18rem;
 }
 
 .about-column {
-  width: 150%;
-  margin: 1rem;
+  margin: 1em 2em;
   text-align: center;
   border-bottom: solid #a24857;
 }
 
-@media all and (max-width: 600px) {
-  .about-and-photo-container {
-    flex-wrap: wrap;
-  }
-  .about-and-photo-container > div {
-    flex: 1 1 100%;
-  }
+#experience,
+#skills,
+#projects,
+#connect {
+  padding-bottom: 1em;
 }
 
 .experience-container {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
 }
 
-.job-containter {
+.job-container {
   background-color: #f4e8e6;
-  padding: 1rem;
   border: solid #a24857;
   border-width: 1%;
-  margin: 1rem;
-  
+  width: 90%;
+  margin: 1em auto;
 }
 
 .job-title {
@@ -138,34 +128,19 @@ header {
 }
 
 .dates {
-  margin-left: auto;
-}
-
-#experience {
-  padding-bottom: 1rem;
-}
-
-#skills {
-  padding-bottom: 1rem;
-}
-
-#projects {
-  padding-bottom: 1rem;
-}
-
-#connect {
-  padding-bottom: 1rem;
+  text-align: right;
+  width: 80%;
 }
 
 .connect-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .connect-container div {
   flex: 1;
-  padding: 0.5rem;
-  margin: 1rem;
+  padding: 0.5em;
+  margin: 1em;
   text-align: center;
   font-size: 1.2rem;
 }
@@ -173,7 +148,96 @@ header {
 .connect-container > div > img {
   width: 20%;
   border-radius: 8px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
   display: block;
+}
+
+@media all and (min-width: 600px) {
+  /* This applies for tablets: */
+  html {
+    scroll-padding-top: 5em;
+  }
+
+  .navigational-header {
+    flex-direction: row;
+    font-size: 1.1rem;
+  }
+
+  .navigational-header > div {
+    flex: 1;
+    margin: 0.1em;
+  }
+
+  .about-and-photo-container {
+    flex-direction: row;
+    margin: 1em;
+    font-weight: bolder;
+  }
+
+  .about-and-photo-container > div > img {
+    width: 8em;
+    border: solid;
+  }
+
+  .experience-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .job-container {
+    width: 25%;
+    min-width: 15em;
+  }
+
+  .connect-container {
+    flex-direction: row;
+    width: 25%;
+  }
+
+  .connect-container div {
+    text-align: center;
+    border: solid #a24857;
+  }
+  .connect-container > div > img {
+    margin: 0 auto;
+    width: 5em;
+  }
+}
+
+@media all and (min-width: 768px) {
+  /* This applies for desktop: */
+  html {
+    scroll-padding-top: 7em;
+  }
+
+  .navigational-header {
+    font-size: 1.3rem;
+    padding: 0.5em 2em;
+  }
+
+  .navigational-header > div {
+    margin: 0.3em;
+    padding: 0.7em;
+  }
+
+  .about-and-photo-container {
+    flex-direction: row;
+    margin: 2em;
+    justify-content: space-evenly;
+  }
+
+  .about-and-photo-container > div > img {
+    max-width: 12em;
+    border-radius: 0px;
+  }
+
+  .job-container {
+    width: 15%;
+    min-width: 20em;
+  }
+
+  .connect-container {
+    width: 40%;
+    font-style: oblique;
+  }
 }
