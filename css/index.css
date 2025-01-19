@@ -101,9 +101,22 @@ header {
   border-bottom: solid #a24857;
 }
 
-#experience,
-#skills,
-#projects,
+#skills > ul {
+  display: flex;
+  flex-direction: column;
+}
+
+#skills > ul > li {
+  padding: 0.5em;
+  margin: 0.5em 0em 0.5em 0em;
+  background-color: #f4e8e6;
+  border: solid #a24857;
+  font-weight: bold;
+  width: 50%;
+  text-align: center;
+  border-radius: 8px;
+}
+
 #connect {
   padding-bottom: 1em;
 }
@@ -189,6 +202,19 @@ header {
     min-width: 15em;
   }
 
+  #skills > ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #skills > ul > li {
+    padding: 0.5em;
+    margin: 1em;
+    width: 15%;
+    border-radius: 8px;
+  }
+
   .connect-container {
     flex-direction: row;
     width: 25%;
@@ -241,3 +267,24 @@ header {
     font-style: oblique;
   }
 }
+
+/*
+#skills > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#skills > ul > li {
+  padding: .5em;
+  margin: 1em 1em;
+  background-color: #f4e8e6;
+  border: solid #a24857;
+  font-weight: bold;
+  width: 15%;
+  text-align: center;
+  border-radius: 8px;
+}
+
+*/
