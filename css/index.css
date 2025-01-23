@@ -2,7 +2,7 @@
 
 /* This applies for mobile phones: */
 
-html {
+html, button {
   font-family: "Montserrat", serif;
   scroll-padding-top: 14em;
 }
@@ -165,6 +165,46 @@ header {
   display: block;
 }
 
+form {
+  margin: 0em 2em;
+}
+
+form > input, textarea {
+  width: 90%;
+}
+
+form > button {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  background-color: darkred;
+  border: solid darkred;
+}
+
+#messages > ul {
+  word-break: break-all;
+  text-wrap: wrap;
+  margin: 0em 1em 0em 0em;
+  
+}
+
+#messages > ul > li {
+  list-style-type: none;
+  background-color: #f4e8e6;
+  border: solid #9b5c66;
+  border-width: 1%;
+  width: 90%;
+  margin: 1em auto;
+  padding: 1em;
+}
+
+#messages > ul > li > button {
+  background-color: #a24857;
+  color: white;
+  border: solid #a24857;
+  
+}
+
 @media all and (min-width: 600px) {
   /* This applies for tablets: */
   html {
@@ -266,4 +306,14 @@ header {
     width: 40%;
     font-style: oblique;
   }
+  
+  form > input, textarea {
+    width: 50%;
+  }
+
+  #messages > ul > li {
+    width: 50%;
+    margin: 1em 1em 1em 0em;
+  }
 }
+
