@@ -32,6 +32,7 @@
       <div><a href="#skills">Skills</a></div>
       <div><a href="#projects">Projects</a></div>
       <div><a href="#connect">Connect</a></div>
+      <div><a href="#user-message">Leave a Message</a></div>
     </nav>
     <header>
       <h1>Veronica Fernandez-Diaz</h1>
@@ -193,9 +194,25 @@
         </div>
         <div class="social-media-column">
           <a href="https://github.com/purple-bird">My Github</a>
-          <img src="images/Github-black-icon.png" alt="Veronica's Github" />
+          <img src="ima e.preventDefault();ges/Github-black-icon.png" alt="Veronica's Github" />
         </div>
       </div>
+    </section>
+    <section id="user-message">
+      <h2>Leave a Message</h2>
+      <form name="leave_message">
+        <input type="text" name="usersName" required=true id="user-name">
+        <label for="user-name">Your Name</label><br></br>
+        <input type="email" name="usersEmail" required=true id="user-email">
+        <label for="user-email">Your Email</label><br></br>
+        <textarea name="usersMessage" required=true id="user-message"></textarea>
+        <label for="user-message">Message</label><br></br>
+        <button type="submit">Submit Form</button>
+      </form>
+    </section>
+    <section id="messages">
+      <h2>Messages</h2>
+      <ul></ul>
     </section>
     <script src="js/index.js"></script>
   </body>

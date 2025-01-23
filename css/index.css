@@ -267,24 +267,3 @@ header {
     font-style: oblique;
   }
 }
-
-/*
-#skills > ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-#skills > ul > li {
-  padding: .5em;
-  margin: 1em 1em;
-  background-color: #f4e8e6;
-  border: solid #a24857;
-  font-weight: bold;
-  width: 15%;
-  text-align: center;
-  border-radius: 8px;
-}
-
-*/
