@@ -32,6 +32,7 @@
       <div><a href="#skills">Skills</a></div>
       <div><a href="#projects">Projects</a></div>
       <div><a href="#connect">Connect</a></div>
+      <div><a href="#user-message">Leave a Message</a></div>
     </nav>
     <header>
       <h1>Veronica Fernandez-Diaz</h1>
@@ -196,6 +197,23 @@
           <img src="images/Github-black-icon.png" alt="Veronica's Github" />
         </div>
       </div>
+    </section>
+    <section id="user-message">
+      <h2>Leave a Message</h2>
+      <form name="leave_message">
+        <label for="user-name"><b>Your Name</b></label><br>
+        <input type="text" name="usersName" required=true id="user-name"><br></br>
+        <label for="user-email"><b>Your Email</b></label><br>
+        <input type="email" name="usersEmail" required=true id="user-email"><br></br>
+        <label for="user-message"><b>Message</b></label><br>
+        <textarea name="usersMessage" required=true id="user-message"></textarea><br></br>
+        
+        <button type="submit">Submit Form</button>
+      </form>
+    </section>
+    <section id="messages">
+      <h2>Messages</h2>
+      <ul></ul>
     </section>
     <script src="js/index.js"></script>
   </body>
