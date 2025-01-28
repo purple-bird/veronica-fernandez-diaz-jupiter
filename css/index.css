@@ -2,9 +2,10 @@
 
 /* This applies for mobile phones: */
 
-html, button {
+html,
+button {
   font-family: "Montserrat", serif;
-  scroll-padding-top: 14em;
+  scroll-padding-top: 16em;
 }
 
 body {
@@ -101,6 +102,18 @@ header {
   border-bottom: solid #a24857;
 }
 
+#projects > ul {
+  background-color: #f4e8e6;
+  border: solid #a24857;
+  padding: 1em 1em 1em 3em;
+  margin: 1em auto;
+  width: 75%;
+  text-align: center;
+  list-style-type: upper-alpha;
+  display: flex;
+  flex-direction: column;
+}
+
 #skills > ul {
   display: flex;
   flex-direction: column;
@@ -169,7 +182,8 @@ form {
   margin: 0em 2em;
 }
 
-form > input, textarea {
+form > input,
+textarea {
   width: 90%;
 }
 
@@ -185,7 +199,6 @@ form > button {
   word-break: break-all;
   text-wrap: wrap;
   margin: 0em 1em 0em 0em;
-  
 }
 
 #messages > ul > li {
@@ -202,18 +215,16 @@ form > button {
   background-color: #a24857;
   color: white;
   border: solid #a24857;
-  
 }
 
 @media all and (min-width: 600px) {
   /* This applies for tablets: */
   html {
-    scroll-padding-top: 5em;
+    scroll-padding-top: 6em;
   }
 
   .navigational-header {
     flex-direction: row;
-    font-size: 1.1rem;
   }
 
   .navigational-header > div {
@@ -235,11 +246,17 @@ form > button {
   .experience-container {
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 3em;
   }
 
   .job-container {
     width: 25%;
     min-width: 15em;
+  }
+
+  #projects > ul {
+    margin: 3em;
+    width: 50%;
   }
 
   #skills > ul {
@@ -258,6 +275,7 @@ form > button {
   .connect-container {
     flex-direction: row;
     width: 25%;
+    margin: 3em;
   }
 
   .connect-container div {
@@ -273,12 +291,13 @@ form > button {
 @media all and (min-width: 768px) {
   /* This applies for desktop: */
   html {
-    scroll-padding-top: 7em;
+    scroll-padding-top: 5em;
   }
 
   .navigational-header {
-    font-size: 1.3rem;
+    font-size: 1rem;
     padding: 0.5em 2em;
+    flex-wrap: wrap;
   }
 
   .navigational-header > div {
@@ -306,8 +325,9 @@ form > button {
     width: 40%;
     font-style: oblique;
   }
-  
-  form > input, textarea {
+
+  form > input,
+  textarea {
     width: 50%;
   }
 
@@ -316,4 +336,3 @@ form > button {
     margin: 1em 1em 1em 0em;
   }
 }
-
