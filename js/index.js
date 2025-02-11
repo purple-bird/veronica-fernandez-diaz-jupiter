@@ -11,7 +11,7 @@ const thisYear = today.getFullYear();
 // Place and create copyright text:
 const footer = document.querySelector("footer");
 const copyright = document.createElement("P");
-const copyrightText = `Veronica Fernandez-Diaz ${thisYear}`;
+const copyrightText = `\u00A9` + ` Veronica Fernandez-Diaz ${thisYear}`;
 copyright.textContent = copyrightText;
 
 footer.appendChild(copyright);
